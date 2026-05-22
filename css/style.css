@@ -41,7 +41,7 @@
   .boton-ingresar {
     color: var(--text);
     font-family: var(--font-titulos);
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: color 0.3s ease;
     &:hover {
       color: var(--accent);
@@ -49,13 +49,14 @@
   }
   .boton-suscribirse {
     background-color: var(--accent);
-    color: #000000;
+    color: var(--background);
     font-family: var(--font-titulos);
-    font-size: 1.3rem;
-    transition: transform 0.2s ease, box-shadow 0.2s linear;
+    font-size: 1.2rem;
+    transition:
+      transform 0.2s ease,
+      box-shadow 0.2s linear;
 
     &:hover {
-      color: #000000;
       transform: translateY(-2px);
       box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
     }
@@ -63,20 +64,19 @@
 }
 
 .formulario-busqueda {
+  width: 100%;
+  max-width: 350px;
   .form-control.entrada-busqueda {
     background-color: var(--background);
     border: 1px solid var(--secondary);
     color: var(--text);
     font-family: var(--font-textos);
-    width: 300px;
+    width: 100%;
     transition: all 0.3s ease;
 
     &:focus {
-      background-color: var(--background);
-      color: var(--text);
       border-color: var(--accent);
       box-shadow: 0 0 5px rgba(163, 230, 53, 0.5);
     }
   }
 }
-

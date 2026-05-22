@@ -24,7 +24,7 @@
           <a class="navbar-brand marca-logo" href="#"> <span>ó</span>rbita </a>
 
           <button
-            class="navbar-toggler"
+            class="navbar-toggler border-0"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#contenidoNav"
@@ -33,16 +33,20 @@
           </button>
 
           <div class="collapse navbar-collapse" id="contenidoNav">
-            <form class="d-flex mx-auto my-2 my-lg-0 formulario-busqueda" role="search">
-              <input
-                class="form-control entrada-busqueda"
-                type="search"
-                placeholder="Buscar..."
-                aria-label="Search"
-              />
-            </form>
+            <div class="d-flex justify-content-center flex-fill my-3 my-lg-0">
+              <form class="formulario-busqueda" role="search">
+                <input
+                  class="form-control entrada-busqueda"
+                  type="search"
+                  placeholder="Buscar..."
+                  aria-label="Search"
+                />
+              </form>
+            </div>
 
-            <div class="d-flex align-items-center gap-3">
+            <div
+              class="d-flex flex-column flex-md-row  justify-content-md-center justify-content-lg-end align-items-stretch align-items-lg-center gap-3 gap-md-5  gap-lg-3 pb-3 pb-lg-0"
+            >
               <button
                 type="button"
                 class="btn btn-link boton-ingresar text-decoration-none"
@@ -54,8 +58,9 @@
               <a
                 href="./pages/suscripcion.html"
                 class="btn fw-bold boton-suscribirse"
-                >Suscribirse</a
               >
+                Suscribirse
+              </a>
             </div>
           </div>
         </div>
