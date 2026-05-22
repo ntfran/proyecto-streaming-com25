@@ -47,4 +47,18 @@
       color: var(--accent);
     }
   }
+  .boton-suscribirse {
+    background-color: var(--accent);
+    color: #000000;
+    font-family: var(--font-titulos);
+    font-size: 1.3rem;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover {
+      color: #000000;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
+    }
+  }
 }
+
