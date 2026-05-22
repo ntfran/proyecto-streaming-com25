@@ -18,7 +18,49 @@
     <title>nombre-de-ejemplo</title>
   </head>
   <body>
-    <head></head>
+    <head>
+      <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-estilo">
+        <div class="container">
+          <a class="navbar-brand marca-logo" href="#"> <span>ó</span>rbita </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#contenidoNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="contenidoNav">
+            <form class="d-flex mx-auto my-2 my-lg-0 formulario-busqueda" role="search">
+              <input
+                class="form-control entrada-busqueda"
+                type="search"
+                placeholder="Buscar..."
+                aria-label="Search"
+              />
+            </form>
+
+            <div class="d-flex align-items-center gap-3">
+              <button
+                type="button"
+                class="btn btn-link boton-ingresar text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLogin"
+              >
+                LogIn
+              </button>
+              <a
+                href="pages/suscripcion.html"
+                class="btn fw-bold boton-suscribirse"
+                >Suscribirse</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+    </head>
     <main></main>
     <footer></footer>
     <script
