@@ -24,150 +24,117 @@
 .navbar.navbar-estilo {
   background-color: rgba(15, 17, 26, 0.9);
   border-bottom: 1px solid var(--secondary);
- }
- .contenedor-modal .marca-logo, .marca-logo {
-    display: inline-flex;
-    align-items: center;
-    font-family: var(--font-logo);
-    font-size: 2.5rem;
-    font-weight: bold;
-    letter-spacing: 0px;
-    color: var(--text);
-    text-decoration: none;
 
-    .letra-o {
-      color: var(--accent);
-      position: relative;
-      display: inline-block;
-      font-family: var(--font-textos);
-      line-height: 1;
-      font-size: 1.35em;
-      animation: orbita3d 10s infinite ease-in-out;
+  .formulario-busqueda {
+    width: 100%;
+    max-width: clamp(300px, 40vw, 450px);
+
+    .input-group {
+      transition: all 0.3s ease;
+      border-radius: 1rem;
+
+      /* Hover en todo el grupo */
+      &:hover {
+        .entrada-busqueda,
+        .icono-busqueda {
+          border-color: var(--accent);
+        }
+      }
+
+      /* Focus-within detecta cuando el input tiene foco */
+      &:focus-within {
+        .entrada-busqueda,
+        .icono-busqueda {
+          border-color: var(--accent);
+        }
+        box-shadow: 0 0 5px rgba(163, 230, 53, 0.5);
+      }
     }
-    .resto-texto {
+
+    .form-control.entrada-busqueda {
+      background-color: var(--background);
+      border: 1px solid var(--secondary);
+      border-right: none;
       color: var(--text);
-      position: relative;
-      z-index: 2;
-      margin-left: 0.02em;
-    }
-  }
+      font-family: var(--font-textos);
+      transition: all 0.3s ease;
 
-  .boton-ingresar {
-    color: var(--text);
-    font-family: var(--font-titulos);
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-    &:hover {
+      /* Bordes redondeados solo en la izquierda */
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .input-group-text.icono-busqueda {
+      background-color: var(--background);
+      border: 1px solid var(--secondary);
+      border-left: none;
       color: var(--accent);
+      transition: all 0.3s ease;
+
+      /* Bordes redondeados solo en la derecha */
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
     }
-  }
-  .boton-suscribirse {
-    background-color: var(--accent);
-    color: var(--background);
-    font-family: var(--font-titulos);
-    font-size: 1.2rem;
-    transition:
-      transform 0.2s ease,
-      box-shadow 0.2s linear;
-
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
-    }
-  }
-
-
-.formulario-busqueda {
-  width: 100%;
-  max-width: clamp(300px, 40vw, 450px);
-
-  .input-group {
-    transition: all 0.3s ease;
-    border-radius: 1rem;
-
-    /* Hover en todo el grupo */
-    &:hover {
-      .entrada-busqueda,
-      .icono-busqueda {
-        border-color: var(--accent);
-      }
-    }
-
-    /* Focus-within detecta cuando el input tiene foco */
-    &:focus-within {
-      .entrada-busqueda,
-      .icono-busqueda {
-        border-color: var(--accent);
-      }
-      box-shadow: 0 0 5px rgba(163, 230, 53, 0.5);
-    }
-  }
-
-  .form-control.entrada-busqueda {
-    background-color: var(--background);
-    border: 1px solid var(--secondary);
-    border-right: none;
-    color: var(--text);
-    font-family: var(--font-textos);
-    transition: all 0.3s ease;
-
-    /* Bordes redondeados solo en la izquierda */
-    border-top-left-radius: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-
-    &:focus {
-      box-shadow: none;
-      outline: none;
-    }
-  }
-
-  .input-group-text.icono-busqueda {
-    background-color: var(--background);
-    border: 1px solid var(--secondary);
-    border-left: none;
-    color: var(--accent);
-    transition: all 0.3s ease;
-
-    /* Bordes redondeados solo en la derecha */
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
   }
 }
-/* Animacion del logo */
-@keyframes orbita3d {
-  0% {
-    transform: translateX(0) scale(1);
-    z-index: 3;
-  }
-  12% {
-    transform: translateX(65px) scale(1.3);
-    z-index: 3;
-  }
+.contenedor-modal .marca-logo,
+.marca-logo {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-logo);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--text);
+  text-decoration: none;
 
-  24% {
-    transform: translateX(134px) scale(1.1);
-    z-index: 3;
+  .letra-o {
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-textos);
+    line-height: 1;
+    font-size: 1.35em;
+    animation: orbita3d 10s infinite ease-in-out;
   }
-  25% {
-    z-index: 1;
+  .resto-texto {
+    color: var(--text);
+    position: relative;
+    z-index: 2;
+    margin-left: 0.02em;
   }
-  36% {
-    transform: translateX(65px) scale(0.8);
-    z-index: 1;
-  }
+}
 
-  48% {
-    transform: translateX(0) scale(1);
-    z-index: 3;
+.boton-ingresar {
+  color: var(--text);
+  font-family: var(--font-titulos);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--accent);
   }
+}
+.boton-suscribirse {
+  background-color: var(--accent);
+  color: var(--background);
+  font-family: var(--font-titulos);
+  font-size: 1.2rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s linear;
 
-  100% {
-    transform: translateX(0) scale(1);
-    z-index: 3;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
   }
 }
 
@@ -235,5 +202,39 @@
       border-color: var(--accent);
       background-color: var(--background);
     }
+  }
+}
+
+/* Animacion del logo */
+@keyframes orbita3d {
+  0% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+  12% {
+    transform: translateX(65px) scale(1.3);
+    z-index: 3;
+  }
+
+  24% {
+    transform: translateX(134px) scale(1.1);
+    z-index: 3;
+  }
+  25% {
+    z-index: 1;
+  }
+  36% {
+    transform: translateX(65px) scale(0.8);
+    z-index: 1;
+  }
+
+  48% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
   }
 }
