@@ -27,17 +27,32 @@
   border-bottom: 1px solid var(--secondary);
 
   .marca-logo {
+    display: inline-flex;
     font-family: var(--font-logo);
     font-size: 2.5rem;
     font-weight: bold;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     text-transform: lowercase;
     color: var(--text);
 
-    span {
+    .letra-o {
       color: var(--accent);
+      position: relative;
+      bottom: 9px;
+      display: inline-block;
+      font-family: var(--font-textos);
+      font-size: 3.4rem;
+      /* Ejecuta la animación: 4 segundos, bucle infinito, aceleración elíptica */
+      animation: orbita3d 10s infinite ease-in-out;
+    }
+    .resto-texto {
+      color: var(--text);
+      position: relative;
+      z-index: 2; /* Capa intermedia fija para que la 'ó' pase por detrás */
+      margin-left: 1px; /* Pequeño ajuste de separación inicial */
     }
   }
+
   .boton-ingresar {
     color: var(--text);
     font-family: var(--font-titulos);
@@ -78,5 +93,38 @@
       border-color: var(--accent);
       box-shadow: 0 0 5px rgba(163, 230, 53, 0.5);
     }
+  }
+}
+
+@keyframes orbita3d {
+  0% {
+    transform: translateX(0) scale(1);
+    z-index: 3; /* Capa superior (Por delante de 'rbita') */
+  }
+  12% {
+    transform: translateX(65px) scale(1.3); /* Cruza por delante hacia la derecha */
+    z-index: 3;
+  }
+
+  24% {
+    transform: translateX(134px) scale(1.1); /* Punto máximo derecho, se achica por la distancia */
+    z-index: 3;
+  }
+  25% {
+    z-index: 1; /* ¡Corte mecánico! Pasa a la capa del fondo instantáneamente */
+  }
+  36% {
+    transform: translateX(65px) scale(0.8); /* Vuelve hacia la izquierda regresando por detrás */
+    z-index: 1;
+  }
+
+  48% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
   }
 }
