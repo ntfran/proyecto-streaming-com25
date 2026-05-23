@@ -19,7 +19,7 @@
   </head>
   <body>
     <head>
-      <nav class="navbar navbar-expand-lg navbar-dark sticky-top navbar-estilo">
+      <nav class="navbar navbar-expand-lg sticky-top navbar-estilo">
         <div class="container">
           <div>
             <a class="navbar-brand marca-logo pt-3" href="#">
@@ -39,12 +39,17 @@
           <div class="collapse navbar-collapse" id="contenidoNav">
             <div class="d-flex justify-content-center flex-fill my-3 my-lg-0">
               <form class="formulario-busqueda" role="search">
-                <input
-                  class="form-control entrada-busqueda"
-                  type="search"
-                  placeholder="Buscar..."
-                  aria-label="Search"
-                />
+                <div class="input-group">
+                  <input
+                    class="form-control entrada-busqueda"
+                    type="search"
+                    placeholder="Buscar..."
+                    aria-label="Search"
+                  />
+                  <span class="input-group-text icono-busqueda">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
               </form>
             </div>
 
