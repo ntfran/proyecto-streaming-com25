@@ -133,8 +133,10 @@
     box-shadow 0.2s linear;
 
   &:hover {
+    background-color: var(--accent);
+    color: var(--background);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
+    box-shadow: 0 0px 10px rgba(163, 230, 53, 0.4);
   }
 }
 
@@ -223,6 +225,7 @@ main {
   background-color: var(--background);
   color: var(--text);
   .marca-logo {
+    font-size: 2.5rem;
     .letra-o-estatica {
       color: var(--accent);
       position: relative;
@@ -241,7 +244,6 @@ main {
   h1 {
     font-family: var(--font-titulos);
     color: var(--text);
-    font-size: 2.5rem;
   }
 
   p {
@@ -447,25 +449,28 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 1rem 2rem;
-    transition:
-      transform 0.3s ease,
-      background-color 0.3s ease;
 
     i {
       font-size: 2.5rem;
       color: var(--primary);
+      transition:
+        transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        color 0.2s ease;
     }
 
     span {
       font-family: var(--font-textos);
       font-size: 0.9rem;
       color: var(--text);
+      transition:
+        transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+        color 0.2s ease;
     }
+
     &:hover {
       i,
       span {
-        transform: scale(1.2);
+        transform: translateY(-4px) scale(1.2);
       }
     }
   }
