@@ -370,3 +370,50 @@ main {
   font-family: var(--font-titulos);
 }
 
+/* ==========================================
+   PASO 3: Detalles Técnicos y Valoración (Detalle Película)
+   ========================================== */
+
+.ficha-tecnica-card {
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ficha-tecnica-card:hover {
+  border-color: var(--accent) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(163, 230, 53, 0.05) !important;
+}
+
+.puntaje-circulo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent) 94%, var(--secondary) 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.puntaje-circulo::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: var(--background);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.puntaje-circulo span {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-titulos);
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
