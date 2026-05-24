@@ -288,9 +288,7 @@ main {
   }
 }
 
-/* ==========================================
-   PASO 1: Hero Cinemático (Detalle Película)
-   ========================================== */
+
 
 .hero-detalle {
   min-height: 400px;
@@ -338,9 +336,7 @@ main {
   line-height: 1.5;
 }
 
-/* ==========================================
-   PASO 2: Sinopsis y Reparto (Detalle Película)
-   ========================================== */
+
 
 .titulo-seccion-detalle {
   font-family: var(--font-titulos);
@@ -370,9 +366,7 @@ main {
   font-family: var(--font-titulos);
 }
 
-/* ==========================================
-   PASO 3: Detalles Técnicos y Valoración (Detalle Película)
-   ========================================== */
+
 
 .ficha-tecnica-card {
   transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
