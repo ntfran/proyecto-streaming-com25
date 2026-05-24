@@ -287,3 +287,127 @@ main {
     z-index: 3;
   }
 }
+
+
+
+.hero-detalle {
+  min-height: 400px;
+  background-color: var(--background);
+  border-bottom: 1px solid var(--secondary);
+}
+
+.hero-backdrop-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../img/portadas/terror-insidious.jpg');
+  background-size: cover;
+  background-position: center;
+  transform: scale(1.1);
+  filter: blur(15px);
+  opacity: 0.2;
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(15, 17, 26, 0.2) 0%, var(--background) 100%);
+  z-index: 2;
+}
+
+.poster-pelicula {
+  max-width: 220px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6) !important;
+}
+
+.titulo-pelicula {
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 800;
+}
+
+.descripcion-corta {
+  font-size: 1.15rem;
+  line-height: 1.5;
+}
+
+
+
+.titulo-seccion-detalle {
+  font-family: var(--font-titulos);
+  color: var(--text);
+  font-weight: 700;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.2px;
+}
+
+.descripcion-larga {
+  font-family: var(--font-textos);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.icono-actor {
+  width: 90px;
+  height: 90px;
+  background-color: var(--secondary);
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+.font-titulo {
+  font-family: var(--font-titulos);
+}
+
+
+
+.ficha-tecnica-card {
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ficha-tecnica-card:hover {
+  border-color: var(--accent) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(163, 230, 53, 0.05) !important;
+}
+
+.puntaje-circulo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: conic-gradient(var(--accent) 94%, var(--secondary) 94%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.puntaje-circulo::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  background: var(--background);
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.puntaje-circulo span {
+  position: relative;
+  z-index: 2;
+  font-family: var(--font-titulos);
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
