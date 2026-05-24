@@ -75,18 +75,139 @@
     </header>
     <main>
       <section class="hero-suscripcion">
-    <div class="container py-5">
-      <div class="text-center mb-5">
-        <h1 class="display-4 fw-bold mb-3">
-          Elige tu <span class="texto-accent">Órbita</span>
-        </h1>
-        <p class="lead">
-          Disfruta de una experiencia cinematográfica sin límites. Selecciona el plan que<br class="d-none d-md-block">
-          mejor se adapte a tu forma de ver el mundo.
-        </p>
-      </div>
-    </div>
-  </section>
+        <div class="container py-5">
+          <div class="text-center mb-5">
+            <h1 class="display-4 fw-bold mb-3">
+              Elige tu <span class="texto-accent">Órbita</span>
+            </h1>
+            <p class="lead">
+              Disfruta de una experiencia cinematográfica sin límites.
+              Selecciona el plan que<br class="d-none d-md-block" />
+              mejor se adapte a tu forma de ver el mundo.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Planes de Suscripción -->
+      <section class="planes-suscripcion py-5">
+        <div class="container">
+          <div class="row g-4">
+            <!-- Plan Básico -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge">ESENCIAL</span>
+                  </div>
+                  <h3 class="card-title mb-3">Básico</h3>
+                  <div class="precio mb-4">
+                    <span class="monto">$8.000ARS</span>
+                    <span class="periodo">/mes</span>
+                  </div>
+                  <ul class="lista-caracteristicas mb-4">
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Acceso a todo el catálogo</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Calidad Estándar (480p)</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>1 dispositivo simultáneo</span>
+                    </li>
+                    <li class="no-disponible">
+                      <i class="bi bi-x-circle"></i>
+                      <span>Descargas offline</span>
+                    </li>
+                  </ul>
+                  <a href="../pages/error404.html" class="btn w-100 mt-auto">
+                    Ponerse en órbita <i class="bi bi-rocket-takeoff"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan Estándar (Recomendado) -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100 card-recomendado">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge badge-recomendado">POPULAR</span>
+                  </div>
+                  <h3 class="card-title mb-3">Estándar</h3>
+                  <div class="precio mb-4">
+                    <span class="monto">$14.000ARS</span>
+                    <span class="periodo">/mes</span>
+                  </div>
+                  <ul class="lista-caracteristicas mb-4">
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Todo el contenido premium</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Calidad Full HD (1080p)</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>2 dispositivos simultáneos</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Descargas disponibles</span>
+                    </li>
+                  </ul>
+                  <a
+                    href="../pages/error404.html"
+                    class="btn w-100 mt-auto btn-recomendado"
+                  >
+                    Ponerse en órbita <i class="bi bi-rocket-takeoff"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Plan Premium -->
+            <div class="col-12 col-md-6 col-lg-4">
+              <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                  <div class="mb-3">
+                    <span class="badge">INMERSIVO</span>
+                  </div>
+                  <h3 class="card-title mb-3">Premium</h3>
+                  <div class="precio mb-4">
+                    <span class="monto">$20.000ARS</span>
+                    <span class="periodo">/mes</span>
+                  </div>
+                  <ul class="lista-caracteristicas mb-4">
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Contenido 4K + HDR</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Audio Dolby Atmos</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>4 dispositivos simultáneos</span>
+                    </li>
+                    <li class="disponible">
+                      <i class="bi bi-check-circle"></i>
+                      <span>Acceso anticipado a estrenos</span>
+                    </li>
+                  </ul>
+                  <a href="../pages/error404.html" class="btn w-100 mt-auto">
+                    Ponerse en órbita <i class="bi bi-rocket-takeoff"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer py-5">
       <div class="container">
@@ -102,8 +223,10 @@
                 ><span class="resto-texto">rbita</span>
               </a>
             </div>
-            <p class="text-white-50 small mb-4 mx-auto mx-lg-0 text-center text-lg-start">
-              Un universo de entretenimiento en un solo lugar. <br>Todo gira
+            <p
+              class="text-white-50 small mb-4 mx-auto mx-lg-0 text-center text-lg-start"
+            >
+              Un universo de entretenimiento en un solo lugar. <br />Todo gira
               alrededor del contenido.
             </p>
             <div
