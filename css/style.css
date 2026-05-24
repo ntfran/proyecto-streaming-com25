@@ -337,3 +337,36 @@ main {
   font-size: 1.15rem;
   line-height: 1.5;
 }
+
+/* ==========================================
+   PASO 2: Sinopsis y Reparto (Detalle Película)
+   ========================================== */
+
+.titulo-seccion-detalle {
+  font-family: var(--font-titulos);
+  color: var(--text);
+  font-weight: 700;
+  border-left: 4px solid var(--accent);
+  padding-left: 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.2px;
+}
+
+.descripcion-larga {
+  font-family: var(--font-textos);
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.icono-actor {
+  width: 90px;
+  height: 90px;
+  background-color: var(--secondary);
+  font-size: 2.5rem;
+  color: var(--text);
+}
+
+.font-titulo {
+  font-family: var(--font-titulos);
+}
+
