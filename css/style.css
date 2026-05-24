@@ -222,14 +222,17 @@ main {
 .hero-suscripcion {
   background-color: var(--background);
   color: var(--text);
-  .letra-o-estatica {
-    color: var(--accent);
-    position: relative;
-    display: inline-block;
-    font-family: var(--font-textos);
-    line-height: 1;
-    font-size: 1.35em;
+  .marca-logo {
+    .letra-o-estatica {
+      color: var(--accent);
+      position: relative;
+      display: inline-block;
+      font-family: var(--font-textos);
+      line-height: 1;
+      font-size: 1.35em;
+    }
   }
+
   .texto-accent {
     color: var(--accent);
     font-family: var(--font-logo);
@@ -238,6 +241,7 @@ main {
   h1 {
     font-family: var(--font-titulos);
     color: var(--text);
+    font-size: 2.5rem;
   }
 
   p {
