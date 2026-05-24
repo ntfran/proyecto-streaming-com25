@@ -213,7 +213,8 @@ body {
 }
 
 main {
-  flex: 1;
+  /* flex: 1; */
+   flex-grow: 1;
 }
 
 /* Estilos del footer */
@@ -286,4 +287,17 @@ main {
     transform: translateX(0) scale(1);
     z-index: 3;
   }
+}
+
+.img-banner{
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(1);
+}
+
+.caja-descrpcion{
+
 }
