@@ -1,7 +1,240 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Cairo:wght@200..1000&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+:root {
+  --text: #e0def5;
+  --background: #0f111a;
+  --primary: #0d6efd;
+  --secondary: #23283e;
+  --accent: #a3e635;
+
+  --font-logo: "Aldrich", sans-serif;
+  --font-titulos: "Cairo", sans-serif;
+  --font-textos: "Zain", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos del navbar */
+
+.navbar.navbar-estilo {
+  background-color: rgba(15, 17, 26, 0.9);
+  border-bottom: 1px solid var(--secondary);
+
+  .formulario-busqueda {
+    width: 100%;
+    max-width: clamp(300px, 40vw, 450px);
+
+    .input-group {
+      transition: all 0.3s ease;
+      border-radius: 1rem;
+
+      /* Hover en todo el grupo */
+      &:hover {
+        .entrada-busqueda,
+        .icono-busqueda {
+          border-color: var(--accent);
+        }
+      }
+
+      /* Focus-within detecta cuando el input tiene foco */
+      &:focus-within {
+        .entrada-busqueda,
+        .icono-busqueda {
+          border-color: var(--accent);
+        }
+        box-shadow: 0 0 5px rgba(163, 230, 53, 0.5);
+      }
+    }
+
+    .form-control.entrada-busqueda {
+      background-color: var(--background);
+      border: 1px solid var(--secondary);
+      border-right: none;
+      color: var(--text);
+      font-family: var(--font-textos);
+      transition: all 0.3s ease;
+
+      /* Bordes redondeados solo en la izquierda */
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+
+    .input-group-text.icono-busqueda {
+      background-color: var(--background);
+      border: 1px solid var(--secondary);
+      border-left: none;
+      color: var(--accent);
+      transition: all 0.3s ease;
+
+      /* Bordes redondeados solo en la derecha */
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+    }
+  }
+}
+.contenedor-modal .marca-logo,
+.marca-logo {
+  display: inline-flex;
+  align-items: center;
+  font-family: var(--font-logo);
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0px;
+  color: var(--text);
+  text-decoration: none;
+
+  .letra-o {
+    color: var(--accent);
+    position: relative;
+    display: inline-block;
+    font-family: var(--font-textos);
+    line-height: 1;
+    font-size: 1.35em;
+    animation: orbita3d 10s infinite ease-in-out;
+  }
+  .resto-texto {
+    color: var(--text);
+    position: relative;
+    z-index: 2;
+    margin-left: 0.02em;
+  }
+}
+
+.boton-ingresar {
+  color: var(--text);
+  font-family: var(--font-titulos);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+  &:hover {
+    color: var(--accent);
+  }
+}
+.boton-suscribirse {
+  background-color: var(--accent);
+  color: var(--background);
+  font-family: var(--font-titulos);
+  font-size: 1.2rem;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s linear;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
+  }
+}
+
+/* Estilos del modal para iniciar sesion */
+
+.modal-content.contenedor-modal {
+  background-color: var(--background);
+  .marca-logo {
+    font-size: 1.8rem;
+    .letra-o {
+      animation: none;
+    } /* Desactivar animacion */
+  }
+}
+
+.modal-body {
+  .form-label {
+    font-family: var(--font-titulos);
+    font-size: 1rem;
+    color: var(--text);
+  }
+
+  .link-recuperar {
+    font-family: var(--font-textos);
+    font-size: 1.1rem;
+    color: var(--accent);
+    transition: 0.3s;
+    &:hover {
+      filter: drop-shadow(0 0px 2px rgba(163, 230, 53, 0.4));
+    }
+  }
+
+  .texto-o-divisor {
+    color: var(--text);
+    font-family: var(--font-textos);
+    font-size: 1.2rem;
+  }
+
+  .boton-modal-enviar {
+    background-color: var(--accent);
+    color: var(--background);
+    font-family: var(--font-titulos);
+    font-size: 1.2rem;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s;
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 15px rgba(163, 230, 53, 0.4);
+    }
+  }
+
+  .boton-modal-google {
+    background-color: transparent;
+    border: 1px solid var(--secondary);
+    color: var(--text);
+    font-family: var(--font-titulos);
+    font-size: 1.1rem;
+    transition:
+      border-color 0.3s ease,
+      background-color 0.3s ease;
+
+    &:hover {
+      border-color: var(--accent);
+      background-color: var(--background);
+    }
+  }
+}
+
+/* Animacion del logo */
+@keyframes orbita3d {
+  0% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+  12% {
+    transform: translateX(65px) scale(1.3);
+    z-index: 3;
+  }
+
+  24% {
+    transform: translateX(134px) scale(1.1);
+    z-index: 3;
+  }
+  25% {
+    z-index: 1;
+  }
+  36% {
+    transform: translateX(65px) scale(0.8);
+    z-index: 1;
+  }
+
+  48% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
+
+  100% {
+    transform: translateX(0) scale(1);
+    z-index: 3;
+  }
 }
