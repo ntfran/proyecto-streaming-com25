@@ -376,6 +376,96 @@ main {
   }
 }
 
+/* FAQ Section */
+.faq-section {
+  background-color: var(--background);
+
+  h2 {
+    font-family: var(--font-titulos);
+    font-size: 2.5rem;
+    color: var(--text);
+  }
+
+  .accordion {
+    max-width: 800px;
+    margin: 0 auto;
+
+    .accordion-item {
+      background-color: var(--background);
+      border: 1px solid var(--secondary);
+      border-radius: 0.75rem;
+      margin-bottom: 1rem;
+      overflow: hidden;
+
+      .accordion-header {
+        .accordion-button {
+          background-color: var(--background);
+          color: var(--text);
+          font-family: var(--font-titulos);
+          font-size: 1.1rem;
+          border: none;
+          padding: 1.25rem 1.5rem;
+          transition: background-color 0.3s ease;
+
+          &:not(.collapsed) {
+            background-color: var(--secondary);
+            color: var(--primary);
+          }
+
+          &::after {
+            filter: brightness(0) invert(1);
+          }
+        }
+      }
+
+      .accordion-body {
+        background-color: var(--background);
+        color: var(--text);
+        font-family: var(--font-textos);
+        padding: 1.5rem;
+        border-top: 1px solid var(--secondary);
+      }
+    }
+  }
+}
+
+/* Métodos de Pago */
+.metodos-pago {
+  background-color: var(--background);
+
+  h2 {
+    font-family: var(--font-titulos);
+    font-size: 2rem;
+    color: var(--text);
+  }
+
+  .icono-pago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease;
+
+    i {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+
+    span {
+      font-family: var(--font-textos);
+      font-size: 0.9rem;
+      color: var(--text);
+    }
+    &:hover {
+      i,
+      span {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
 /* Estilos del footer */
 
 .footer {
