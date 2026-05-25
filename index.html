@@ -76,147 +76,165 @@
     <main>
       <!-- Sección: Recomendados para ti -->
       <section class="seccion-recomendados py-5">
-        <div class="container">
-          <!-- Encabezado con link "Ver más" -->
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="titulo-seccion">Recomendados para ti</h2>
+        <div class="container mb-5">
+          <div
+            class="d-flex justify-content-start align-items-start mb-4 flex-column"
+          >
+            <h3 class="titulo-seccion">Recomendados para ti</h3>
             <a href="./pages/error404.html" class="link-ver-mas">
               Ver más <i class="bi bi-chevron-right"></i>
             </a>
           </div>
 
           <!-- Carrusel de Películas -->
-          <div
-            id="carouselRecomendados"
-            class="carousel slide"
-            data-bs-ride="false"
-          >
+          <div id="carousel-peliculas" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
-              <!-- Slide 1 - Primeras 6 películas -->
+              <!-- Slide 1 - Primeras 6 peliculas -->
               <div class="carousel-item active">
                 <div class="row g-3">
-                  <!-- Película 1 -->
+                  <!-- pelicula 1 -->
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
+                        <span class="badge-nuevo">Nuevo</span>
                         <img
                           src="./img/portadas/terror-insidious.jpg"
-                          alt="Insidious"
+                          alt="Interstellar"
                           class="img-fluid"
                         />
-                        <span class="badge-nuevo">Nuevo</span>
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Duna</h3>
-                        <p class="detalles-pelicula">Ciencia ficción • 2024</p>
+                        <h3 class="titulo-pelicula">Interstellar</h3>
+                        <p class="detalles-pelicula">2h 49m restantes</p>
                       </div>
                     </a>
                   </div>
 
-                  <!-- Película 2 -->
+                  <!-- pelicula 2 -->
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-animal-farm.jpg"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=The+Witcher"
+                          alt="The Witcher"
+                          class="img-fluid"
+                        />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
+                      </div>
+                      <div class="info-pelicula mt-2">
+                        <h3 class="titulo-pelicula">The Witcher</h3>
+                        <p class="detalles-pelicula">S2 E4 • 32m restantes</p>
+                      </div>
+                    </a>
+                  </div>
+
+                  <!-- pelicula 3 -->
+                  <div class="col-6 col-md-4 col-lg-2">
+                    <a href="./pages/error404.html" class="card-pelicula">
+                      <div class="imagen-container">
+                        <img
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=The+Last+of+Us"
                           alt="The Last of Us"
                           class="img-fluid"
                         />
-                        <span class="badge-nuevo">Nuevo</span>
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
                         <h3 class="titulo-pelicula">The Last of Us</h3>
-                        <p class="detalles-pelicula">Drama • 2023</p>
+                        <p class="detalles-pelicula">S1 E6 • 18m restantes</p>
                       </div>
                     </a>
                   </div>
 
-                  <!-- Película 3 -->
+                  <!-- pelicula 4 -->
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-apex.jpg"
-                          alt="En La Sombra"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Los+Simios"
+                          alt="El Planeta de los Simios"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">En La Sombra</h3>
-                        <p class="detalles-pelicula">Drama • 2023</p>
+                        <h3 class="titulo-pelicula">
+                          El Planeta de los Simios
+                        </h3>
+                        <p class="detalles-pelicula">1h 05m restantes</p>
                       </div>
                     </a>
                   </div>
 
-                  <!-- Película 4 -->
+                  <!-- pelicula 5 -->
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-el-diablo-viste-a-la-moda-2.jpg"
-                          alt="Rift"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Cosmos"
+                          alt="Cosmos"
                           class="img-fluid"
                         />
-                        <span class="badge-nuevo">Nuevo</span>
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Rift</h3>
-                        <p class="detalles-pelicula">Ciencia ficción • 2024</p>
+                        <h3 class="titulo-pelicula">Cosmos</h3>
+                        <p class="detalles-pelicula">S3 E2 • 45m restantes</p>
                       </div>
                     </a>
                   </div>
 
-                  <!-- Película 5 -->
+                  <!-- pelicula 6 -->
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-jackass-best-and-las.jpg"
-                          alt="Memorias del Mañana"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Foundation"
+                          alt="Foundation"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Memorias del Mañana</h3>
-                        <p class="detalles-pelicula">Aventura • 2023</p>
-                      </div>
-                    </a>
-                  </div>
-
-                  <!-- Película 6 -->
-                  <div class="col-6 col-md-4 col-lg-2">
-                    <a href="./pages/error404.html" class="card-pelicula">
-                      <div class="imagen-container">
-                        <img
-                          src="./img/portadas/sugerencia-michael.jpg"
-                          alt="Eclipse"
-                          class="img-fluid"
-                        />
-                      </div>
-                      <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Eclipse</h3>
-                        <p class="detalles-pelicula">Thriller • 2024</p>
+                        <h3 class="titulo-pelicula">Foundation</h3>
+                        <p class="detalles-pelicula">S1 E8 • 22m restantes</p>
                       </div>
                     </a>
                   </div>
                 </div>
               </div>
 
-              <!-- Slide 2 - Siguientes 6 películas -->
+              <!-- Slide 2 - Siguientes 6 peliculas -->
               <div class="carousel-item">
                 <div class="row g-3">
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-mortal-kombat-2.jpg"
-                          alt="Horizonte"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Stranger+Things"
+                          alt="Stranger Things"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Horizonte</h3>
-                        <p class="detalles-pelicula">Acción • 2024</p>
+                        <h3 class="titulo-pelicula">Stranger Things</h3>
+                        <p class="detalles-pelicula">S4 E3 • 51m restantes</p>
                       </div>
                     </a>
                   </div>
@@ -225,14 +243,17 @@
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-scary-movie.jpg"
-                          alt="Nebulosa"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Dark"
+                          alt="Dark"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Nebulosa</h3>
-                        <p class="detalles-pelicula">Ciencia ficción • 2023</p>
+                        <h3 class="titulo-pelicula">Dark</h3>
+                        <p class="detalles-pelicula">S2 E7 • 38m restantes</p>
                       </div>
                     </a>
                   </div>
@@ -241,14 +262,17 @@
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-super-mario-galaxy.jpg"
-                          alt="Resonancia"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Black+Mirror"
+                          alt="Black Mirror"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Resonancia</h3>
-                        <p class="detalles-pelicula">Drama • 2024</p>
+                        <h3 class="titulo-pelicula">Black Mirror</h3>
+                        <p class="detalles-pelicula">S5 E2 • 29m restantes</p>
                       </div>
                     </a>
                   </div>
@@ -257,14 +281,19 @@
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-super-mario-galaxy.jpg"
-                          alt="Abismo"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Westworld"
+                          alt="Westworld"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Abismo</h3>
-                        <p class="detalles-pelicula">Terror • 2023</p>
+                        <h3 class="titulo-pelicula">Westworld</h3>
+                        <p class="detalles-pelicula">
+                          S3 E5 • 1h 12m restantes
+                        </p>
                       </div>
                     </a>
                   </div>
@@ -273,14 +302,17 @@
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/sugerencia-tom-clancys.jpg"
-                          alt="Quantum"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Altered+Carbon"
+                          alt="Altered Carbon"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Quantum</h3>
-                        <p class="detalles-pelicula">Ciencia ficción • 2024</p>
+                        <h3 class="titulo-pelicula">Altered Carbon</h3>
+                        <p class="detalles-pelicula">S1 E4 • 44m restantes</p>
                       </div>
                     </a>
                   </div>
@@ -289,14 +321,17 @@
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
                         <img
-                          src="./img/portadas/comedia-ashby.jpg"
-                          alt="Silencio"
+                          src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=For+All+Mankind"
+                          alt="For All Mankind"
                           class="img-fluid"
                         />
+                        <div class="overlay-play">
+                          <i class="bi bi-play-circle-fill"></i>
+                        </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">Silencio</h3>
-                        <p class="detalles-pelicula">Suspense • 2023</p>
+                        <h3 class="titulo-pelicula">For All Mankind</h3>
+                        <p class="detalles-pelicula">S2 E9 • 55m restantes</p>
                       </div>
                     </a>
                   </div>
@@ -308,7 +343,7 @@
             <button
               class="carousel-control-prev"
               type="button"
-              data-bs-target="#carouselRecomendados"
+              data-bs-target="#carousel-peliculas"
               data-bs-slide="prev"
             >
               <span
@@ -320,7 +355,7 @@
             <button
               class="carousel-control-next"
               type="button"
-              data-bs-target="#carouselRecomendados"
+              data-bs-target="#carousel-peliculas"
               data-bs-slide="next"
             >
               <span
@@ -332,15 +367,24 @@
           </div>
         </div>
       </section>
+
       <!-- Sección: Explorar por Categorías -->
       <section class="seccion-categorias py-5">
-        <div class="container">
-          <h2 class="titulo-seccion mb-4">Explora por categorías</h2>
+        <div class="container mb-3">
+          <h3 class="titulo-seccion mb-4">Explora por categorías</h3>
 
-          <div class="d-flex flex-wrap gap-3">
-            <a href="./pages/error404.html" class="btn-categoria activo">
+          <div class="d-flex flex-wrap gap-3 justify-content-center">
+            <a href="./index.html" class="btn-categoria activo">
               <i class="bi bi-grid-3x3-gap-fill"></i>
-              <span>Todos</span>
+              <span>Home</span>
+            </a>
+            <a href="./pages/error404.html" class="btn-categoria">
+              <i class="bi bi-emoji-laughing-fill"></i>
+              <span>Comedia</span>
+            </a>
+            <a href="./pages/error404.html" class="btn-categoria">
+              <i class="bi bi-emoji-dizzy"></i>
+              <span>Terror</span>
             </a>
             <a href="./pages/error404.html" class="btn-categoria">
               <i class="bi bi-lightning-charge-fill"></i>
@@ -351,33 +395,33 @@
               <span>Aventura</span>
             </a>
             <a href="./pages/error404.html" class="btn-categoria">
-              <i class="bi bi-emoji-laughing-fill"></i>
-              <span>Comedia</span>
-            </a>
-            <a href="./pages/error404.html" class="btn-categoria">
-              <i class="bi bi-mask"></i>
-              <span>Drama</span>
-            </a>
-            <a href="./pages/error404.html" class="btn-categoria">
               <i class="bi bi-rocket-takeoff-fill"></i>
               <span>Ciencia ficción</span>
+            </a>
+            <a href="./pages/error404.html" class="btn-categoria">
+              <i class="bi bi-arrow-through-heart-fill"></i>
+              <span>Romance</span>
+            </a>
+            <a href="./pages/error404.html" class="btn-categoria">
+              <i class="bi bi-balloon-fill"></i>
+              <span>Infantil</span>
             </a>
           </div>
         </div>
       </section>
 
-      <!-- Sección: Series Sugeridas -->
+      <!-- Sección: series Sugeridas -->
       <section class="seccion-series py-5">
         <div class="container">
           <!-- Encabezado -->
-          <div class="d-flex justify-content-between align-items-center mb-4">
-            <h2 class="titulo-seccion">Series Sugeridas</h2>
+          <div class="d-flex justify-content-start align-items-start mb-4 flex-column">
+            <h2 class="titulo-seccion">Series sugeridas</h2>
             <a href="./pages/error404.html" class="link-ver-mas">
               Ver más <i class="bi bi-chevron-right"></i>
             </a>
           </div>
 
-          <!-- Carrusel de Series -->
+          <!-- Carrusel de series -->
           <div id="carouselSeries" class="carousel slide" data-bs-ride="false">
             <div class="carousel-inner">
               <!-- Slide 1 - Primeras 6 series -->
@@ -387,6 +431,7 @@
                   <div class="col-6 col-md-4 col-lg-2">
                     <a href="./pages/error404.html" class="card-pelicula">
                       <div class="imagen-container">
+                        <span class="badge-nuevo">Nuevo</span>
                         <img
                           src="https://via.placeholder.com/300x450/1a1a2e/a3e635?text=Interstellar"
                           alt="Interstellar"
