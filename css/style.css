@@ -301,7 +301,7 @@ main {
       min-height: 70vh;
       width: 100%;
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       overflow: hidden;
     }
 
@@ -314,7 +314,7 @@ main {
       left: 80px;
       position: absolute;
       width: 50vw;
-      height: 50vh;
+      height: 25vw;
       background: linear-gradient(
         90deg, 
         rgba(10,10,10,0.95) 0%, 
@@ -430,12 +430,11 @@ main {
         );
     color: var(var(--text));
     padding: 10px;
-    width: 70vh;
-    top: 220px;
+    width: 90vh;
+    top: 250px;
     align-items: center;
     position: absolute;
     z-index: 1;
-    /* z */
 }
 
 .img-banner{
@@ -453,3 +452,26 @@ main {
   font-family: 'Cairo', sans-serif;
 }
 
+.btn-general{
+  font-family: 'Cairo', sans-serif;
+  font-size: 1rem;
+  border: 1 solid var(--secondary);
+  background: linear-gradient(135deg,rgba(35, 40, 62, 1) 0%, rgba(163, 230, 53, 1) 87%, rgba(15, 17, 26, 0.63) 100%);
+  color: var(--secondary);
+}
+
+.ventana-modal{
+  --bs-modal-width: 900px;
+}
+
+.texto-modal{
+  font-family: 'zain', sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.texto-titulo-modal{
+  font-family: 'Aldrich', sans-serif;
+  font-size: 2rem;
+  color: var(--accent);
+}
