@@ -426,3 +426,51 @@ main {
   border-color: #0d6efd;
   box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
 }
+
+/* Banner*/ 
+.banner-orbita {
+  background: radial-gradient(circle at right, #111827 0%, #0d0f1a 45%, #090b14 100%);
+  color: white;
+  padding: 80px 0;
+  border-bottom: 2px solid #007bff;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.banner-orbita h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.banner-orbita h1 span {
+  color: #9cff1a;
+  display: block;
+}
+
+.banner-orbita p {
+  color: #c7c7d9;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.btn-orbita {
+  background-color: #9cff1a;
+  color: #111;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 28px;
+}
+
+.btn-orbita:hover {
+  background-color: #7fdc00;
+  color: #111;
+}
+
+.banner-img {
+  border-radius: 18px;
+  box-shadow: 0 0 35px rgba(156, 255, 26, 0.25);
+}
