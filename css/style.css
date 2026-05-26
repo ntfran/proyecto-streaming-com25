@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Aldrich&family=Cairo:wght@200..1000&family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
 
 :root {
   --text: #e0def5;
@@ -215,7 +216,8 @@ body {
 }
 
 main {
-  flex: 1;
+  /* flex: 1; */
+  flex-grow: 1;
 }
 
 /* Estilos paginas suscripcion */
@@ -485,6 +487,7 @@ main {
   .texto-descripcion-footer {
     max-width: 300px;
   }
+
   .link-footer {
     text-decoration: none;
     font-size: 0.95rem;
@@ -498,6 +501,7 @@ main {
       filter: drop-shadow(0px 0px 1px rgba(163, 230, 53, 0.9));
     }
   }
+
   .enlace-red {
     color: var(--primary);
     opacity: 90%;
@@ -513,6 +517,7 @@ main {
     }
   }
 }
+
 /* Animacion del logo */
 @keyframes orbita3d {
   0% {
@@ -547,7 +552,195 @@ main {
   }
 }
 
+/* Estilos del Carrousel */
 
+.hero {
+  height: 85vh;
+  min-height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+}
+
+.hero-bg {
+  width: 100vw;
+}
+
+.hero-overlay {
+  top: 100px;
+  left: 80px;
+  position: absolute;
+  width: 50vw;
+  height: 25vw;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 10, 10, 0.95) 0%,
+      rgba(10, 10, 10, 0.7) 50%,
+      rgba(10, 10, 10, 0.3) 100%
+    ),
+    linear-gradient(0deg, rgba(10, 10, 10, 1) 0%, rgba(10, 10, 10, 0) 30%);
+}
+
+.hero-content {
+  max-width: 100vw;
+  margin: 0 auto;
+  padding: 0 4rem;
+  width: 50vw;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: linear-gradient(
+    135deg,
+    rgba(35, 40, 62, 1) 0%,
+    rgba(163, 230, 53, 1) 87%,
+    rgba(15, 17, 26, 0.63) 100%
+  );
+  color: white;
+  padding: 6px 16px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.hero-title {
+  font-family: "Cairo", sans-serif;
+}
+
+.hero-meta {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+
+.hero-description {
+  font-size: 1 rem;
+  line-height: 1.6;
+  color: #e5e5e5;
+  max-width: 60vw;
+  margin-bottom: 2rem;
+  align-content: end;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero-content {
+  padding: 0 1.5rem;
+}
+
+.hero-overlay {
+  background: linear-gradient(
+    0deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    rgba(10, 10, 10, 0.4) 100%
+  );
+}
+
+.caja-texto {
+  font-family: "zain", sans-serif;
+  font-size: 1 rem;
+  background: linear-gradient(
+    0deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    rgba(10, 10, 10, 0.4) 100%
+  );
+  color: var(var(--text));
+  padding: 10px;
+  width: 90vh;
+  top: 220px;
+  right: 50px;
+  position: absolute;
+  z-index: 1;
+}
+
+.caja-texto-horizontal {
+  font-family: "zain", sans-serif;
+  font-size: 1rem;
+  background: linear-gradient(
+    0deg,
+    rgba(10, 10, 10, 1) 0%,
+    rgba(10, 10, 10, 0.8) 60%,
+    rgba(10, 10, 10, 0.4) 100%
+  );
+  color: var(var(--text));
+  padding: 10px;
+  width: 90vh;
+  top: 250px;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+}
+
+.img-banner {
+  height: 85vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1);
+}
+
+.btn-velvet {
+  background-color: var(--accent);
+  color: var(--background);
+  font-family: "Cairo", sans-serif;
+}
+
+.btn-general {
+  font-family: "Cairo", sans-serif;
+  font-size: 1rem;
+  border: 1 solid var(--secondary);
+  background: linear-gradient(
+    135deg,
+    rgba(35, 40, 62, 1) 0%,
+    rgba(163, 230, 53, 1) 87%,
+    rgba(15, 17, 26, 0.63) 100%
+  );
+  color: var(--secondary);
+}
+
+.ventana-modal {
+  --bs-modal-width: 900px;
+}
+
+.texto-modal {
+  font-family: "zain", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.texto-titulo-modal {
+  font-family: "Aldrich", sans-serif;
+  font-size: 2rem;
+  color: var(--accent);
+}
 
 .hero-detalle {
   min-height: 400px;
@@ -561,7 +754,7 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('../img/portadas/terror-insidious.jpg');
+  background-image: url("../img/portadas/terror-insidious.jpg");
   background-size: cover;
   background-position: center;
   transform: scale(1.1);
@@ -576,7 +769,11 @@ main {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(180deg, rgba(15, 17, 26, 0.2) 0%, var(--background) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 17, 26, 0.2) 0%,
+    var(--background) 100%
+  );
   z-index: 2;
 }
 
@@ -594,8 +791,6 @@ main {
   font-size: 1.15rem;
   line-height: 1.5;
 }
-
-
 
 .titulo-seccion-detalle {
   font-family: var(--font-titulos);
@@ -625,10 +820,11 @@ main {
   font-family: var(--font-titulos);
 }
 
-
-
 .ficha-tecnica-card {
-  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    border-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .ficha-tecnica-card:hover {
