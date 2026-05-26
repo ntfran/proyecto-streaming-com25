@@ -567,7 +567,7 @@ main {
   width: 100vw;
 }
 
-.hero-overlay {
+.hero-overlay-inicial {
   top: 100px;
   left: 80px;
   position: absolute;
@@ -652,7 +652,7 @@ main {
   padding: 0 1.5rem;
 }
 
-.hero-overlay {
+.hero-overlay-inicial{
   background: linear-gradient(
     0deg,
     rgba(10, 10, 10, 1) 0%,
