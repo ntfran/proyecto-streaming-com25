@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="../css/style.css" />
-    <title>nombre-de-ejemplo</title>
+    <title>Órbita 404 Error</title>
   </head>
   <body>
     <header>
@@ -74,35 +74,27 @@
       </nav>
     </header>
     <main>
-      <div class="pagina-error-404">
-        <div class="container contenedor-error">
-          <!-- Órbita animada -->
-          <div class="orbita-animada">
-            <div class="orbita-circulo"></div>
-            <div class="satelite"></div>
-          </div>
+      <div
+        class="error-page-wrapper d-flex align-items-center justify-content-center vh-100 position-relative"
+      >
+        <div class="espacio-orbital">
+          <div class="anillo-guia"></div>
+          <div class="satelite-fugaz"></div>
+        </div>
 
-          <!-- Código de error -->
-          <div class="codigo-error">
-            <span class="numero-error">404</span>
-          </div>
+        <div class="box-mensaje text-center position-relative px-3">
+          <h1 class="numero-grande">404</h1>
+          <h2 class="titulo-mensaje my-2">Señal Perdida</h2>
+          <p class="texto-descripcion text-white-50 mb-4 mx-auto">
+            La página que estás buscando se salió de órbita o no existe.
+          </p>
 
-          <!-- Textos -->
-          <div class="textos-error">
-            <h1 class="titulo-error">Satélite Perdido</h1>
-            <p class="descripcion-error">
-              Parece que este satélite se perdió en el espacio infinito.<br />
-              La página que buscas no existe en nuestra órbita.
-            </p>
-          </div>
-
-          <!-- Botón retorno -->
-          <div class="botones-error">
-            <a href="../index.html" class="btn btn-volver">
-              <i class="bi bi-arrow-left"></i>
-              Volver a Órbita
-            </a>
-          </div>
+          <a
+            href="../index.html"
+            class="btn btn-outline-success btn-sm px-4 rounded-pill btn-volver"
+          >
+            Volver al Inicio
+          </a>
         </div>
       </div>
     </main>
