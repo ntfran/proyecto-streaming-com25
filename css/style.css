@@ -251,6 +251,8 @@ main {
 .seccion-categorias,
 .seccion-series {
   background: linear-gradient(140deg, #050811 60%, rgba(13, 110, 253, 0.2));
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
 }
 
 /* Controles del Carrusel */
