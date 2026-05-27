@@ -652,7 +652,7 @@ main {
   padding: 0 1.5rem;
 }
 
-.hero-overlay-inicial{
+.hero-overlay-inicial {
   background: linear-gradient(
     0deg,
     rgba(10, 10, 10, 1) 0%,
@@ -898,4 +898,40 @@ main {
 
 .card-dark {
   background-color: #0b0d17;
+}
+
+#img-banner {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.contenedor-elementos {
+  border-radius: 10px;
+  padding: 5px;
+  /* background-color: var(--secondary);
+  opacity: 80%; */
+  color: var(--accent);
+  font-family: 'Cairo', sans-serif;
+  font-size: 3rem;
+  top: 100px;
+  left: 5px;
+  position: absolute;
+  z-index: 1;
+}
+
+.contenedor-texto{
+  position: absolute;
+  z-index: 1;
+  width: 50vh;
+  border-radius: 10px;
+  padding: 5px;
+  filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.15));
+  color: var(--background);
+  font-family:'zain', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  top: 240px;
+  left: 270px;
+  text-align: center;
 }
