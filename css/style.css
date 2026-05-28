@@ -1404,4 +1404,28 @@ label.page-link {
   }
 }
 
+/* --- Banner de Promoción --- */
+.fondo-banner-promocion {
+  /* Fondo oscuro semitransparente alineado a la estética de tu sitio */
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  .icono-corona {
+    /* Color amarillo/dorado cálido en sintonía con tus badges de Estreno */
+    color: var(--accent);
+    filter: drop-shadow(0 0 10px rgba(13, 110, 253, 0.9));
+    .texto-secundario-banner {
+      color: var(--text);
+      font-family: var(--font-textos);
+    }
+  }
+}
 
+/* Transición suave para la interactividad del botón */
+.transicion-boton {
+  transition: all 0.3s ease-in-out;
+}
+
+.transicion-boton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.4);
+}
