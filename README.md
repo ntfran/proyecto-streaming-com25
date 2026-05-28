@@ -115,7 +115,7 @@ PFM1-STREAMING/
 
 ### Página Principal (index.html)
 - ✅ Navbar con búsqueda y botones de acción
-- ✅ Carrusel heroico con contenido destacado
+- ✅ Carrusel con contenido destacado
 - ✅ Sección "Recomendados para ti" con carrusel
 - ✅ Botones de categorías explorables
 - ✅ Sección "Series Sugeridas" con progreso de visualización
