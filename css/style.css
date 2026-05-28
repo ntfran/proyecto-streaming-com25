@@ -137,7 +137,7 @@
     background-color: var(--accent);
     color: var(--background);
     transform: translateY(-2px);
-    box-shadow: 0 0px 10px rgba(163, 230, 53, 0.4);
+    box-shadow: 0 0px 10px rgba(13, 110, 253, 0.9);
   }
 }
 
