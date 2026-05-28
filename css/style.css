@@ -366,7 +366,6 @@ main {
 
 /* Hero */
 .hero-suscripcion {
-  background-color: var(--background);
   color: var(--text);
   .marca-logo {
     font-size: 2.5rem;
@@ -399,7 +398,7 @@ main {
 
 /* Cards de Planes */
 .planes-suscripcion {
-  background-color: var(--background);
+
 
   .card {
     background-color: var(--background);
@@ -561,7 +560,7 @@ main {
 /* FAQ Section */
 .faq-section {
   background-color: var(--background);
-
+  border-top: 1px solid var(--primary);
   h2 {
     font-family: var(--font-titulos);
     font-size: 2.5rem;
