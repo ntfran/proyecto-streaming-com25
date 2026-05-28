@@ -18,11 +18,11 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
     />
-    <link rel="icon" type="image/png" href="./img/favicon.png">
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Órbita - Todo gira al rededor del contenido</title>
   </head>
-  <body >
+  <body>
     <header>
       <nav class="navbar navbar-expand-lg sticky-top navbar-estilo">
         <div class="container">
@@ -79,7 +79,7 @@
       </nav>
     </header>
 
-    <main class="fade-in-page">
+    <main class="fade-in-page detalle-serie-bg">
       <!-- Sección Carousel -->
       <section id="carousel-destacados" class="carousel slide">
         <div class="carousel-indicators">
@@ -259,7 +259,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-  </section>
+      </section>
       <!-- Sección: Recomendados para ti -->
       <section class="seccion-recomendados py-5">
         <div class="container mb-5">
@@ -284,7 +284,10 @@
                 <div class="row g-3">
                   <!-- pelicula 1 -->
                   <div class="col-6 col-md-4 col-lg-2">
-                    <a href="./pages/detalle-pelicula.html" class="card-pelicula">
+                    <a
+                      href="./pages/detalle-pelicula.html"
+                      class="card-pelicula"
+                    >
                       <div class="imagen-container">
                         <span class="badge-nuevo">Estreno</span>
                         <img
@@ -481,9 +484,7 @@
                       </div>
                       <div class="info-pelicula mt-2">
                         <h3 class="titulo-pelicula">Borderline</h3>
-                        <p class="detalles-pelicula">
-                          S3 E5 • 24min
-                        </p>
+                        <p class="detalles-pelicula">S3 E5 • 24min</p>
                       </div>
                     </a>
                   </div>
@@ -558,6 +559,40 @@
         </div>
       </section>
 
+      <section class="container my-5">
+        <div
+          class="row fondo-banner-promocion rounded-4 p-4 p-md-5 align-items-center text-white shadow-lg  detalle-serie-bg"
+        >
+          <div
+            class="col-12 col-md-8 d-flex align-items-start gap-4 mb-4 mb-md-0"
+          >
+            <div class="display-4 icono-corona d-none d-sm-block">
+              <i class="bi bi-rocket-takeoff-fill"></i
+              ><i class="bi bi-globe-americas-fill"></i>
+            </div>
+            <div>
+              <h3 class="fw-bold mb-2 fs-2 text-center text-md-start">
+                Disfruta de todo el contenido sin límites
+              </h3>
+              <p
+                class="texto-secundario-banner mb-0 text-center text-md-start fs-5"
+              >
+                Miles de películas y series. Cancela cuando quieras.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-4 text-center text-md-end">
+            <a
+              href="./pages/suscripcion.html"
+              class="btn fw-bold boton-suscribirse py-3 px-4 rounded-3 d-inline-flex align-items-center justify-content-center gap-2 w-100 w-md-auto transicion-boton"
+            >
+              <span>Ver planes y precios</span>
+              <i class="bi bi-chevron-right fs-6"></i>
+            </a>
+          </div>
+        </div>
+      </section>
       <!-- Sección: Explorar por Categorías -->
       <section class="seccion-categorias py-5">
         <div class="container mb-3">
@@ -694,9 +729,7 @@
                         </div>
                       </div>
                       <div class="info-pelicula mt-2">
-                        <h3 class="titulo-pelicula">
-                          Game of Thrones
-                        </h3>
+                        <h3 class="titulo-pelicula">Game of Thrones</h3>
                         <p class="detalles-pelicula">5 Temporadas</p>
                       </div>
                     </a>
@@ -818,9 +851,7 @@
                       </div>
                       <div class="info-pelicula mt-2">
                         <h3 class="titulo-pelicula">Vikings</h3>
-                        <p class="detalles-pelicula">
-                          3 Temporadas
-                        </p>
+                        <p class="detalles-pelicula">3 Temporadas</p>
                       </div>
                     </a>
                   </div>
