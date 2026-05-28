@@ -10,15 +10,16 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css" />
     <title>Órbita - Todo gira al rededor del contenido</title>
 </head>
 
-<body>
+<body >
     <header>
         <nav class="navbar navbar-expand-lg sticky-top navbar-estilo">
             <div class="container">
-                <a class="navbar-brand marca-logo" href="#">
+                <a class="navbar-brand marca-logo" href="../index.html">
                     <span class="letra-o">ó</span><span class="resto-texto">rbita</span>
                 </a>
 
@@ -54,8 +55,8 @@
             </div>
         </nav>
     </header>
-    <main>
-        <section class="container mt-5 mb-5" style="font-family: 'zain', sans-serif;">
+    <main class="detalle-serie-bg fade-in-page">
+        <section class="container mt-5 mb-5 " style="font-family: 'zain', sans-serif;">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-8 col-lg-6">
 
@@ -70,13 +71,13 @@
                             <form>
                                 <div class="mb-3">
                                     <label class="form-label fw-semibold">Nombre</label>
-                                    <input type="text" class="form-control bg-dark text-light border-secondary"
+                                    <input type="text" class="form-control bg-dark text-light border-secondary .was-validated" required
                                         placeholder="Ingresá tu nombre">
                                 </div>
 
                                 <div class="mb-3">
                                     <label class="form-label fw-semibold">Email</label>
-                                    <input type="email" class="form-control bg-dark text-light border-secondary"
+                                    <input type="email" class="form-control bg-dark text-light border-secondary .was-validated" required
                                         placeholder="Ingresá tu email">
                                 </div>
 
@@ -88,8 +89,8 @@
 
                                 <div class="mb-4">
                                     <label class="form-label fw-semibold">Mensaje</label>
-                                    <textarea class="form-control bg-dark text-light border-secondary" rows="5"
-                                        placeholder="Escribí tu mensaje"></textarea>
+                                    <textarea class="form-control bg-dark text-light border-secondary" rows="5" required
+                                        maxlength="500" placeholder="Escribí tu mensaje" was-validated></textarea>
                                 </div>
 
                                 <button type="submit" class="btn text-center w-100 fw-bold text-dark btn-orbita">
@@ -165,22 +166,22 @@
                     <h5 class="titulo-columna-footer mb-3">Soporte y Comunidad</h5>
                     <ul class="list-unstyled d-flex flex-column gap-2 m-0">
                         <li>
-                            <a href="./pages/suscripcion.html" class="link-footer">Planes de Suscripción</a>
+                            <a href="./suscripcion.html" class="link-footer">Planes de Suscripción</a>
                         </li>
                         <li>
-                            <a href="./pages/acerca-de.html" class="link-footer">Acerca de nosotros</a>
+                            <a href="./acerca-de.html" class="link-footer">Acerca de nosotros</a>
                         </li>
                         <li>
-                            <a href="./pages/contacto.html" class="link-footer">Contacto por consultas</a>
+                            <a href="./contacto-equipo.html" class="link-footer">Contacto por consultas</a>
                         </li>
                         <li>
-                            <a href="./pages/error404.html" class="link-footer">Centro de ayuda</a>
+                            <a href="./error404.html" class="link-footer">Centro de ayuda</a>
                         </li>
                         <li>
-                            <a href="./pages/error404.html" class="link-footer">Dispositivos compatibles</a>
+                            <a href="./error404.html" class="link-footer">Dispositivos compatibles</a>
                         </li>
                         <li>
-                            <a href="./pages/error404.html" class="link-footer">Preguntas frecuentes</a>
+                            <a href="./error404.html" class="link-footer">Preguntas frecuentes</a>
                         </li>
                     </ul>
                 </div>
