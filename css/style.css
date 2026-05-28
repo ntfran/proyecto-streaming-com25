@@ -899,3 +899,120 @@ main {
 .card-dark {
   background-color: #0b0d17;
 }
+
+/* paginacion */
+.pagination {
+  --bs-pagination-bg: var(--secondary);
+  --bs-pagination-border-color: rgba(224, 222, 245, 0.1);
+  --bs-pagination-color: var(--text);
+  --bs-pagination-hover-color: var(--accent);
+  --bs-pagination-hover-bg: var(--secondary);
+  --bs-pagination-hover-border-color: var(--accent);
+  --bs-pagination-focus-color: var(--accent);
+  --bs-pagination-focus-bg: var(--secondary);
+  --bs-pagination-focus-box-shadow: 0 0 10px rgba(163, 230, 53, 0.4);
+  --bs-pagination-active-color: var(--background);
+  --bs-pagination-active-bg: var(--accent);
+  --bs-pagination-active-border-color: var(--accent);
+  --bs-pagination-disabled-color: rgba(224, 222, 245, 0.35);
+  --bs-pagination-disabled-bg: rgba(35, 40, 62, 0.4);
+  --bs-pagination-disabled-border-color: transparent;
+  
+  gap: 0.35rem;
+}
+
+.page-link {
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--font-titulos);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.95rem;
+  border-width: 1px;
+}
+
+.page-link:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.15);
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pelicula-animada {
+  animation: fadeInSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+label.page-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+#galeria-terror .p-1,
+#galeria-terror .p-2,
+#galeria-terror .p-3,
+#galeria-comedia .p-1,
+#galeria-comedia .p-2,
+#galeria-comedia .p-3 {
+  display: none !important;
+}
+
+
+#page-1:checked ~ main #galeria-terror .p-1,
+#page-1:checked ~ main #galeria-comedia .p-1,
+#page-2:checked ~ main #galeria-terror .p-2,
+#page-2:checked ~ main #galeria-comedia .p-2,
+#page-3:checked ~ main #galeria-terror .p-3,
+#page-3:checked ~ main #galeria-comedia .p-3 {
+  display: block !important;
+  animation: fadeInSlideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+.btn-prev-1, .btn-prev-2, .btn-prev-3,
+.btn-next-1, .btn-next-2, .btn-next-3 {
+  display: none !important;
+}
+
+
+#page-1:checked ~ main .btn-prev-1 { display: block !important; }
+#page-2:checked ~ main .btn-prev-2 { display: block !important; }
+#page-3:checked ~ main .btn-prev-3 { display: block !important; }
+
+
+#page-1:checked ~ main .btn-next-1 { display: block !important; }
+#page-2:checked ~ main .btn-next-2 { display: block !important; }
+#page-3:checked ~ main .btn-next-3 { display: block !important; }
+
+
+#page-1:checked ~ main .label-page-1,
+#page-2:checked ~ main .label-page-2,
+#page-3:checked ~ main .label-page-3 {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--background) !important;
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.4);
+}
