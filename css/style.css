@@ -474,3 +474,39 @@ main {
   border-radius: 18px;
   box-shadow: 0 0 35px rgba(156, 255, 26, 0.25);
 }
+
+/* Banner 2*/
+.banner-orbita .banner-content {
+  background: linear-gradient(90deg, #06182e, #071f3d);
+  border-radius: 10px;
+  padding: 22px 28px;
+  color: white;
+}
+
+.banner-icon {
+  font-size: 42px;
+  color: #b7ff00;
+}
+
+.banner-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner-content p {
+  font-size: 14px;
+  color: #cfd8e3;
+}
+
+.btn-orbita {
+  background-color: #b7ff00;
+  color: #06182e;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 10px 18px;
+}
+
+.btn-orbita:hover {
+  background-color: #9ee600;
+  color: #06182e;
+}
