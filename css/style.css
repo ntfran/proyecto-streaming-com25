@@ -902,8 +902,8 @@ main {
 
 /* Estilos pagina 404 */
 
-.error-page-wrapper {
-  background-color: var(--background);
+.error-404 {
+  background:radial-gradient(  rgba(13, 110, 253,0.08) 2%,#050811 );
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -976,8 +976,7 @@ main {
   font-family: var(--font-textos);
 }
 
-/* Estilo estricto para el botón sin romper Bootstrap */
-.error-page-wrapper .btn-volver {
+.error-404 .btn-volver {
   display: flex;
   justify-content: center;
   color: var(--accent);
@@ -986,7 +985,7 @@ main {
   transition: all 0.3s ease-in-out;
 }
 
-.error-page-wrapper .btn-volver:hover {
+.error-404 .btn-volver:hover {
   background-color: var(--accent);
   color: #0c0c0e;
   box-shadow: 0 0 20px rgba(46, 206, 22, 0.6);
@@ -995,7 +994,7 @@ main {
 @keyframes giroYEscapeContinuo {
   /* 0% al 50%: Da una vuelta completa en sentido horario alrededor del centro */
   0% {
-    transform-origin: 6px -178px; /* El pivote es el centro exacto del anillo */
+    transform-origin: 6px -178px; /* Centro del anillo */
     transform: rotate(0deg);
     left: 50%;
     bottom: 0;
@@ -1006,9 +1005,9 @@ main {
     left: 50%;
     bottom: 0;
   }
-  /* 50% al 75%: Se suelta del centro y viaja recto hacia la izquierda screenspace */
+  /* 50% al 75%: Se suelta del centro y viaja recto hacia la izquierda*/
   75% {
-    transform-origin: center; /* Rompe el pivote central */
+    transform-origin: center; /* Rompe el centro donde gira */
     transform: rotate(360deg); /* Deja de girar sobre el anillo */
     left: -400px; /* Sale eyectado horizontalmente hacia la izquierda */
     bottom: 0; /* Mantiene su altura en la base del círculo */
