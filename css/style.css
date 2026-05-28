@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 
-/* Estilos del navbar */
+/* -------------------Estilos del navbar---------------------- */
 
 .navbar.navbar-estilo {
   background-color: rgba(15, 17, 26, 0.9);
@@ -141,7 +141,7 @@
   }
 }
 
-/* Estilos del modal para iniciar sesion */
+/* ----------------Estilos del modal para iniciar sesion -----------------*/
 
 .modal-content.contenedor-modal {
   background-color: var(--background);
@@ -220,7 +220,149 @@ main {
   flex-grow: 1;
 }
 
-/* Estilos paginas suscripcion */
+/* ---------------------Estilos sugerencias ---------------------*/
+
+/* Títulos de Sección */
+.titulo-seccion {
+  font-family: var(--font-titulos);
+  font-size: 1.8rem;
+  color: var(--text);
+  font-weight: 600;
+}
+
+/* Link "Ver más" */
+.link-ver-mas {
+  font-family: var(--font-textos);
+  font-size: 1rem;
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+
+  &:hover {
+    color: var(--text);
+  }
+}
+
+/* Secciones generales */
+.seccion-recomendados,
+.seccion-categorias,
+.seccion-series {
+  background: linear-gradient(140deg, #050811 60%, rgba(13, 110, 253, 0.2));
+  border-top: 1px solid var(--primary);
+  border-bottom: 1px solid var(--primary);
+}
+
+/* Controles del Carrusel */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    filter: brightness(0) invert(1);
+    width: 4rem;
+    height: 100%;
+    opacity: 20%;
+  }
+}
+
+.carousel:hover {
+  .carousel-control-prev,
+  .carousel-control-next {
+    opacity: 1;
+  }
+}
+
+/* Cards de Películas/Series */
+.card-pelicula {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.3s ease;
+  margin: 5px;
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  .imagen-container {
+    position: relative;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    aspect-ratio: 2 / 3;
+    background-color: var(--secondary);
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease;
+    }
+
+    /* Badge "Nuevo" */
+    .badge-nuevo {
+      position: absolute;
+      top: 0.75rem;
+      left: 0.75rem;
+      background-color: var(--accent);
+      color: var(--background);
+      font-family: var(--font-logo);
+      font-size: 0.75rem;
+      padding: 0.35rem 0.75rem;
+      border-radius: 0.25rem;
+      font-weight: 600;
+      z-index: 2;
+    }
+
+    /* Overlay de Play para Series */
+    .overlay-play {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(15, 17, 26, 0.9), transparent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+
+      i {
+        font-size: 4rem;
+        color: var(--primary);
+        filter: drop-shadow(0 0 10px rgba(13, 110, 253, 0.4));
+        color: #0d6efd;
+      }
+    }
+
+    &:hover .overlay-play {
+      opacity: 1;
+    }
+  }
+
+  .info-pelicula {
+    .titulo-pelicula {
+      font-family: var(--font-titulos);
+      font-size: 1rem;
+      color: var(--text);
+      margin: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .detalles-pelicula {
+      font-family: var(--font-textos);
+      font-size: 0.85rem;
+      color: var(--text);
+      opacity: 0.7;
+      margin: 0;
+    }
+  }
+}
+
+/* ------------------Estilos paginas suscripcion------------------------ */
 
 /* Hero */
 .hero-suscripcion {
@@ -380,6 +522,38 @@ main {
         box-shadow: 0 6px 20px rgba(163, 230, 53, 0.4);
         background-color: var(--accent);
       }
+    }
+  }
+}
+
+/* Botones de Categorías */
+.seccion-categorias {
+  border-top: 1px solid var(--secondary);
+  border-bottom: 1px solid var(--secondary);
+
+  .btn-categoria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    gap: 0.5em;
+    background-color: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 2rem;
+    color: var(--text);
+    font-family: var(--font-titulos);
+    font-size: 1rem;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    width: clamp(300px, 20vh, 450px);
+
+    i {
+      font-size: 1.2rem;
+    }
+
+    &:hover {
+      border-color: var(--primary);
+      background-color: rgba(13, 110, 253, 0.4);
     }
   }
 }
@@ -552,7 +726,7 @@ main {
   }
 }
 
-/* Estilos del Carrousel */
+/* ----------------------- Estilos del Carrousel del Home -----------------*/
 
 .hero {
   height: 85vh;
@@ -866,7 +1040,7 @@ main {
   font-size: 1.25rem;
 }
 
-/* contacto */
+/* ------------------------ Estilos Pagina de Contacto -------------------- */
 
 .btn-orbita {
   background-color: #9aff1a;
@@ -882,7 +1056,7 @@ main {
   box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
 }
 
-/* detalle serie*/
+/* ----------------------- Estilos pagina detalle serie -------------------*/
 
 .btn-success {
   background-color: #9aff1a;
@@ -900,6 +1074,7 @@ main {
   background-color: #0b0d17;
 }
 
+<<<<<<< HEAD
 /* Estilos pagina 404 */
 
 .error-404 {
@@ -1020,3 +1195,121 @@ main {
     opacity: 0;
   }
 }
+=======
+/* paginacion */
+.pagination {
+  --bs-pagination-bg: var(--secondary);
+  --bs-pagination-border-color: rgba(224, 222, 245, 0.1);
+  --bs-pagination-color: var(--text);
+  --bs-pagination-hover-color: var(--accent);
+  --bs-pagination-hover-bg: var(--secondary);
+  --bs-pagination-hover-border-color: var(--accent);
+  --bs-pagination-focus-color: var(--accent);
+  --bs-pagination-focus-bg: var(--secondary);
+  --bs-pagination-focus-box-shadow: 0 0 10px rgba(163, 230, 53, 0.4);
+  --bs-pagination-active-color: var(--background);
+  --bs-pagination-active-bg: var(--accent);
+  --bs-pagination-active-border-color: var(--accent);
+  --bs-pagination-disabled-color: rgba(224, 222, 245, 0.35);
+  --bs-pagination-disabled-bg: rgba(35, 40, 62, 0.4);
+  --bs-pagination-disabled-border-color: transparent;
+  
+  gap: 0.35rem;
+}
+
+.page-link {
+  border-radius: 0.5rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: var(--font-titulos);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.95rem;
+  border-width: 1px;
+}
+
+.page-link:hover:not(.disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.15);
+}
+
+.page-item:first-child .page-link {
+  border-top-left-radius: 0.5rem !important;
+  border-bottom-left-radius: 0.5rem !important;
+}
+
+.page-item:last-child .page-link {
+  border-top-right-radius: 0.5rem !important;
+  border-bottom-right-radius: 0.5rem !important;
+}
+
+
+@keyframes fadeInSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.pelicula-animada {
+  animation: fadeInSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+label.page-link {
+  cursor: pointer;
+  user-select: none;
+}
+
+
+#galeria-terror .p-1,
+#galeria-terror .p-2,
+#galeria-terror .p-3,
+#galeria-comedia .p-1,
+#galeria-comedia .p-2,
+#galeria-comedia .p-3 {
+  display: none !important;
+}
+
+
+#page-1:checked ~ main #galeria-terror .p-1,
+#page-1:checked ~ main #galeria-comedia .p-1,
+#page-2:checked ~ main #galeria-terror .p-2,
+#page-2:checked ~ main #galeria-comedia .p-2,
+#page-3:checked ~ main #galeria-terror .p-3,
+#page-3:checked ~ main #galeria-comedia .p-3 {
+  display: block !important;
+  animation: fadeInSlideUp 0.5s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+
+.btn-prev-1, .btn-prev-2, .btn-prev-3,
+.btn-next-1, .btn-next-2, .btn-next-3 {
+  display: none !important;
+}
+
+
+#page-1:checked ~ main .btn-prev-1 { display: block !important; }
+#page-2:checked ~ main .btn-prev-2 { display: block !important; }
+#page-3:checked ~ main .btn-prev-3 { display: block !important; }
+
+
+#page-1:checked ~ main .btn-next-1 { display: block !important; }
+#page-2:checked ~ main .btn-next-2 { display: block !important; }
+#page-3:checked ~ main .btn-next-3 { display: block !important; }
+
+
+#page-1:checked ~ main .label-page-1,
+#page-2:checked ~ main .label-page-2,
+#page-3:checked ~ main .label-page-3 {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+  color: var(--background) !important;
+  box-shadow: 0 4px 12px rgba(163, 230, 53, 0.4);
+}
+>>>>>>> a588d0d49fb17d6e7b1305490ef92de1a618feb7
