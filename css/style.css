@@ -1045,6 +1045,8 @@ main {
 .btn-orbita {
   background-color: #9aff1a;
   border: none;
+  justify-content: center;
+  
 }
 
 .btn-orbita:hover {
