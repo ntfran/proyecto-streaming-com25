@@ -1310,3 +1310,9 @@ label.page-link {
   color: var(--background) !important;
   box-shadow: 0 4px 12px rgba(163, 230, 53, 0.4);
 }
+
+/* Estilo de pagina detalle serie */
+
+.detalle-serie-bg{
+  background:radial-gradient(  rgba(13, 110, 253,0.1) 2%,#050811 )
+}

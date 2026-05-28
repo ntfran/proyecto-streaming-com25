@@ -14,58 +14,350 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+    <link rel="icon" type="image/png" href="../img/favicon.png">
     <link rel="stylesheet" href="../css/style.css" />
-    <title>nombre-de-ejemplo</title>
+    <title>Órbita - Contáctanos</title>
   </head>
   <body>
-    <head></head>
-    <main class="bg-dark text-light py-5 min-vh-100">
-  <section class="container">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-8 col-lg-6">
+    <header>
+      <nav class="navbar navbar-expand-lg sticky-top navbar-estilo">
+        <div class="container">
+          <a class="navbar-brand marca-logo" href="../index.html">
+            <span class="letra-o">ó</span><span class="resto-texto">rbita</span>
+          </a>
 
-        <div class="card bg-black text-light border border-secondary shadow-lg rounded-4">
-          <div class="card-body p-4 p-md-5">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#contenidoNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <h1 class="fw-bold mb-3 text-success">Contacto</h1>
-            <p class="text-secondary mb-4">
-              ¿Tenés alguna consulta? Completá el formulario y te responderemos a la brevedad.
-            </p>
+          <div class="collapse navbar-collapse" id="contenidoNav">
+            <div class="d-flex justify-content-center flex-fill my-3 my-lg-0">
+              <form class="formulario-busqueda" role="search">
+                <div class="input-group">
+                  <input
+                    class="form-control entrada-busqueda"
+                    type="search"
+                    placeholder="Buscar..."
+                    aria-label="Search"
+                  />
+                  <span class="input-group-text icono-busqueda">
+                    <i class="bi bi-search"></i>
+                  </span>
+                </div>
+              </form>
+            </div>
 
-            <form>
-              <div class="mb-3">
-                <label class="form-label fw-semibold">Nombre</label>
-                <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Ingresá tu nombre">
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label fw-semibold">Email</label>
-                <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="Ingresá tu email">
-              </div>
-
-              <div class="mb-3">
-                <label class="form-label fw-semibold">Asunto</label>
-                <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="Motivo de la consulta">
-              </div>
-
-              <div class="mb-4">
-                <label class="form-label fw-semibold">Mensaje</label>
-                <textarea class="form-control bg-dark text-light border-secondary" rows="5" placeholder="Escribí tu mensaje"></textarea>
-              </div>
-
-              <button type="submit" class="btn w-100 fw-bold text-dark btn-orbita">
-                Enviar consulta
+            <div
+              class="d-flex flex-column flex-md-row justify-content-md-center justify-content-lg-end align-items-stretch align-items-lg-center gap-3 gap-md-5 gap-lg-3 pb-3 pb-lg-0"
+            >
+              <button
+                type="button"
+                class="btn btn-link boton-ingresar text-decoration-none"
+                data-bs-toggle="modal"
+                data-bs-target="#modalLogin"
+              >
+                Iniciar Sesión
               </button>
-            </form>
+              <a
+                href="./suscripcion.html"
+                class="btn fw-bold boton-suscribirse"
+              >
+                Suscribirse
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-dark text-light py-5 min-vh-100">
+      <section class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-8 col-lg-6">
+            <div
+              class="card bg-black text-light border border-secondary shadow-lg rounded-4"
+            >
+              <div class="card-body p-4 p-md-5">
+                <h1 class="fw-bold mb-3 text-success">Contacto</h1>
+                <p class="text-secondary mb-4">
+                  ¿Tenés alguna consulta? Completá el formulario y te
+                  responderemos a la brevedad.
+                </p>
 
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Nombre</label>
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-light border-secondary"
+                      placeholder="Ingresá tu nombre"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Email</label>
+                    <input
+                      type="email"
+                      class="form-control bg-dark text-light border-secondary"
+                      placeholder="Ingresá tu email"
+                    />
+                  </div>
+
+                  <div class="mb-3">
+                    <label class="form-label fw-semibold">Asunto</label>
+                    <input
+                      type="text"
+                      class="form-control bg-dark text-light border-secondary"
+                      placeholder="Motivo de la consulta"
+                    />
+                  </div>
+
+                  <div class="mb-4">
+                    <label class="form-label fw-semibold">Mensaje</label>
+                    <textarea
+                      class="form-control bg-dark text-light border-secondary"
+                      rows="5"
+                      placeholder="Escribí tu mensaje"
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    class="btn w-100 fw-bold text-dark btn-orbita"
+                  >
+                    Enviar consulta
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer py-5">
+      <div class="container">
+        <div class="row gy-4 justify-content-between">
+          <div
+            class="col-12 col-lg-4 text-start text-md-center text-lg-start mb-2 mb-lg-0"
+          >
+            <div
+              class="mb-3 d-flex justify-content-center justify-content-lg-start align-items-center gap-2"
+            >
+              <a class="marca-logo text-decoration-none" href="#">
+                <span class="letra-o">ó</span
+                ><span class="resto-texto">rbita</span>
+              </a>
+            </div>
+            <p
+              class="text-white-50 small mb-4 mx-auto mx-lg-0 text-center text-lg-start"
+            >
+              Un universo de entretenimiento en un solo lugar. <br />Todo gira
+              alrededor del contenido.
+            </p>
+            <div
+              class="d-flex justify-content-center justify-content-lg-start gap-4"
+            >
+              <a
+                href="./error404.html"
+                class="enlace-red"
+                aria-label="Instagram"
+              >
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="./error404.html" class="enlace-red" aria-label="Twitter">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a
+                href="./error404.html"
+                class="enlace-red"
+                aria-label="Facebook"
+              >
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="./error404.html" class="enlace-red" aria-label="TikTok">
+                <i class="bi bi-tiktok"></i>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 text-start text-md-start text-lg-start"
+          >
+            <h5 class="titulo-columna-footer mb-3">Explorar</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+              <li><a href="./index.html" class="link-footer">Inicio</a></li>
+              <li>
+                <a href="./categoria-1.html" class="link-footer">Terror</a>
+              </li>
+              <li>
+                <a href="./categoria-2.html" class="link-footer">Comedia</a>
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer">Accion</a>
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer">Drama</a>
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer"
+                  >Ciencia Ficción</a
+                >
+              </li>
+              <li>
+                <a href="./detalle-pelicula.html" class="link-footer"
+                  >Ver Película Destacada</a
+                >
+              </li>
+              <li>
+                <a href="./detalle-serie.html" class="link-footer"
+                  >Ver Serie del Momento</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="col-12 col-md-6 col-lg-4 text-start text-md-end text-lg-end"
+          >
+            <h5 class="titulo-columna-footer mb-3">Soporte y Comunidad</h5>
+            <ul class="list-unstyled d-flex flex-column gap-2 m-0">
+              <li>
+                <a href="./suscripcion.html" class="link-footer"
+                  >Planes de Suscripción</a
+                >
+              </li>
+              <li>
+                <a href="./acerca-de.html" class="link-footer"
+                  >Acerca de nosotros</a
+                >
+              </li>
+              <li>
+                <a href="./contacto.html" class="link-footer"
+                  >Contacto por consultas</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer"
+                  >Centro de ayuda</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer"
+                  >Dispositivos compatibles</a
+                >
+              </li>
+              <li>
+                <a href="./error404.html" class="link-footer"
+                  >Preguntas frecuentes</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
 
+        <div class="border-top border-secondary mt-5 pt-4 text-center">
+          <p class="text-white-50 small m-0">
+            &copy; 2026 Órbita. Todos los derechos reservados.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Modal de iniciar sesion -->
+    <div class="modal fade" id="modalLogin" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div
+          class="modal-content contenedor-modal border border-secondary rounded-4 p-3"
+        >
+          <div class="modal-header border-0 pb-0">
+            <div class="d-flex flex-row">
+              <h5 class="modal-title marca-logo">
+                Ingresar a <span class="letra-o ms-2">ó</span
+                ><span class="resto-texto">rbita</span>
+              </h5>
+            </div>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+            ></button>
+          </div>
+
+          <div class="modal-body pt-3">
+            <form action="./error404.html">
+              <div class="mb-3">
+                <label for="emailLogin" class="form-label mb-1"
+                  >Correo electrónico</label
+                >
+                <input
+                  type="email"
+                  class="form-control entrada-busqueda"
+                  id="emailLogin"
+                  placeholder="nombre@ejemplo.com"
+                  required
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="passwordLogin" class="form-label mb-1"
+                  >Contraseña</label
+                >
+                <input
+                  type="password"
+                  class="form-control entrada-busqueda"
+                  id="passwordLogin"
+                  placeholder="••••••••"
+                  required
+                />
+              </div>
+
+              <div class="text-end mb-4">
+                <a
+                  href="./error404.html"
+                  class="link-recuperar text-decoration-none"
+                >
+                  ¿Olvidaste tu contraseña?
+                </a>
+              </div>
+
+              <button
+                type="submit"
+                class="btn fw-bold boton-modal-enviar w-100 py-2"
+              >
+                Iniciar sesión
+              </button>
+            </form>
+
+            <div class="d-flex align-items-center my-4">
+              <hr class="flex-grow-1 border-secondary m-0" />
+              <span class="px-3 texto-o-divisor">o</span>
+              <hr class="flex-grow-1 border-secondary m-0" />
+            </div>
+
+            <a
+              href="./error404.html"
+              class="btn boton-modal-google w-100 py-2 text-decoration-none"
+            >
+              <i class="bi bi-google me-2"></i>Continuar con Google
+            </a>
+            <div
+              class="d-flex justify-content-center align-content-center mb-2 mt-3 gap-2"
+            >
+              <p class="m-0">¿No tienes cuenta?</p>
+              <a
+                href="./error404.html"
+                class="link-recuperar text-decoration-none m-0"
+              >
+                Registrarse
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </section>
-</main>
-    <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
