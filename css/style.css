@@ -366,7 +366,6 @@ main {
 
 /* Hero */
 .hero-suscripcion {
-  background-color: var(--background);
   color: var(--text);
   .marca-logo {
     font-size: 2.5rem;
@@ -399,7 +398,7 @@ main {
 
 /* Cards de Planes */
 .planes-suscripcion {
-  background-color: var(--background);
+
 
   .card {
     background-color: var(--background);
@@ -561,7 +560,7 @@ main {
 /* FAQ Section */
 .faq-section {
   background-color: var(--background);
-
+  border-top: 1px solid var(--primary);
   h2 {
     font-family: var(--font-titulos);
     font-size: 2.5rem;
@@ -1058,6 +1057,90 @@ main {
   box-shadow: 0 0 10px rgba(13, 110, 253, 0.5);
 }
 
+
+/* Banner*/ 
+.banner-orbita {
+  background: radial-gradient(circle at right, #111827 0%, #0d0f1a 45%, #090b14 100%);
+  color: white;
+  padding: 80px 0;
+  border-bottom: 2px solid #007bff;
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.6);
+}
+
+.min-vh-75 {
+  min-height: 75vh;
+}
+
+.banner-orbita h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.banner-orbita h1 span {
+  color: #9cff1a;
+  display: block;
+}
+
+.banner-orbita p {
+  color: #c7c7d9;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.btn-orbita {
+  background-color: #9cff1a;
+  color: #111;
+  font-weight: 700;
+  border-radius: 8px;
+  padding: 12px 28px;
+}
+
+.btn-orbita:hover {
+  background-color: #7fdc00;
+  color: #111;
+}
+
+.banner-img {
+  border-radius: 18px;
+  box-shadow: 0 0 35px rgba(156, 255, 26, 0.25);
+}
+
+/* Banner 2*/
+.banner-orbita .banner-content {
+  background: linear-gradient(90deg, #06182e, #071f3d);
+  border-radius: 10px;
+  padding: 22px 28px;
+  color: white;
+}
+
+.banner-icon {
+  font-size: 42px;
+  color: #b7ff00;
+}
+
+.banner-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.banner-content p {
+  font-size: 14px;
+  color: #cfd8e3;
+}
+
+.btn-orbita {
+  background-color: #b7ff00;
+  color: #06182e;
+  font-weight: 600;
+  border-radius: 6px;
+  padding: 10px 18px;
+}
+
+.btn-orbita:hover {
+  background-color: #9ee600;
+  color: #06182e;
+ }
 /* ----------------------- Estilos pagina detalle serie -------------------*/
 
 .btn-success {
@@ -1393,4 +1476,5 @@ label.page-link {
         opacity: 1;
         transform: translateY(0);
     }
+
 }
