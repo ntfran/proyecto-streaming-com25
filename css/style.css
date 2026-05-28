@@ -1074,6 +1074,126 @@ main {
   background-color: #0b0d17;
 }
 
+/* Estilos pagina 404 */
+
+.error-404 {
+  background:radial-gradient(  rgba(13, 110, 253,0.08) 2%,#050811 );
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* El espacio donde se dibuja el anillo y el punto */
+.espacio-orbital {
+  position: absolute;
+  width: 380px;
+  height: 380px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Anillo estético y sutil */
+.anillo-guia {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 1px dashed rgba(46, 206, 22, 0.8);
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+/* El satélite verde flúor con su brillo */
+.satelite-fugaz {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent);
+  border-radius: 50%;
+  box-shadow:
+    0 0 15px #2ece16,
+    0 0 25px #2ece16;
+
+  /* Lo posicionamos originalmente abajo del todo (las 18hs de la órbita) */
+  bottom: 0;
+  left: 50%;
+
+  /* Aplicamos la animación unificada */
+  animation: giroYEscapeContinuo 4s linear infinite;
+}
+
+/* Caja de texto centrada por encima del diseño */
+.box-mensaje {
+  z-index: 10;
+  max-width: 450px;
+}
+
+.numero-grande {
+  font-size: 6rem;
+  font-family: var(--font-logo);
+  font-weight: 900;
+  color: var(--accent);
+  text-shadow: 0 0 30px rgba(46, 206, 22, 0.3);
+  margin: 0;
+  line-height: 0.85;
+}
+
+.titulo-mensaje {
+  font-family: var(--font-titulos);
+}
+
+.texto-descripcion {
+  font-size: 1rem;
+  max-width: 320px;
+  font-family: var(--font-textos);
+}
+
+.error-404 .btn-volver {
+  display: flex;
+  justify-content: center;
+  color: var(--accent);
+  border-color: var(--accent);
+  background-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-404 .btn-volver:hover {
+  background-color: var(--accent);
+  color: #0c0c0e;
+  box-shadow: 0 0 20px rgba(46, 206, 22, 0.6);
+}
+
+@keyframes giroYEscapeContinuo {
+  /* 0% al 50%: Da una vuelta completa en sentido horario alrededor del centro */
+  0% {
+    transform-origin: 6px -178px; /* Centro del anillo */
+    transform: rotate(0deg);
+    left: 50%;
+    bottom: 0;
+  }
+  50% {
+    transform-origin: 6px -178px;
+    transform: rotate(360deg); /* Completó la vuelta y está abajo de nuevo */
+    left: 50%;
+    bottom: 0;
+  }
+  /* 50% al 75%: Se suelta del centro y viaja recto hacia la izquierda*/
+  75% {
+    transform-origin: center; /* Rompe el centro donde gira */
+    transform: rotate(360deg); /* Deja de girar sobre el anillo */
+    left: -400px; /* Sale eyectado horizontalmente hacia la izquierda */
+    bottom: 0; /* Mantiene su altura en la base del círculo */
+    opacity: 0;
+  }
+  /* 75% al 100%: Reseteo invisible para el loop */
+  100% {
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+  }
+}
 /* paginacion */
 .pagination {
   --bs-pagination-bg: var(--secondary);
